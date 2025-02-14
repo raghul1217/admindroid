@@ -34,17 +34,15 @@ body {
 }
 
 .navbar {
-    background: var(--blue);
+    background: var(--background);
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    
-    width: 95%;
-    border-radius: 10px;
+    width: 100%;
     margin: 0px auto;
-    top: 10px;
     position: fixed;
 }
 
@@ -63,8 +61,9 @@ body {
 
 .navbar ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--text-color);
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .brand {
@@ -174,11 +173,13 @@ h3, h4{
 .step-card {
     background: var(--alternatebg);
     padding: 20px;
-    width: 12%;
+    width: 15%;
+    height: 180px;
     text-align: center;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
 .testimonials {
     text-align: center;
@@ -189,8 +190,9 @@ h3, h4{
 .testimonial-cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    height: 200px;
+    gap: 40px;
+    height: 250px;
+    padding-top: 20px;
 }
 
 .testimonial-card {
@@ -199,7 +201,7 @@ h3, h4{
     width: 30%;
     text-align: center;
     border: 1px solid #e0e0e0;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 @media (max-width: 768px) {
